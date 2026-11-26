@@ -1,0 +1,117 @@
+
+/* Filtros de livros */
+
+.livros-filtros {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 1;
+}
+
+.livros-filtros .search-container {
+  flex: 1;
+  min-width: 180px;
+}
+
+.filter-select {
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Informações do livro */
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-info strong {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.book-info span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Informações complementares */
+
+.field-hint {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.availability-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkbox-field input {
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Avisos */
+
+.admin-warning {
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .livros-filtros {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .livros-filtros .search-container {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+}

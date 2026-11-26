@@ -1,0 +1,10 @@
+
+import { Router } from "express";
+import { usuarioController } from "../controllers/usuario.controller";
+
+const router = Router();
+
+router.post("/cadastro", usuarioController.cadastrar);
+router.post("/login", usuarioController.login);
+
+export default router;
